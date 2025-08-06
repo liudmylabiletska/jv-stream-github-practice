@@ -1,11 +1,5 @@
 package core.basesyntax;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.NoSuchElementException;
-import java.util.function.Predicate;
 import model.Candidate;
 import model.Cat;
 import model.Person;
@@ -16,6 +10,8 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import practice.CandidateValidator;
 import practice.StreamPractice;
+import java.util.*;
+import java.util.function.Predicate;
 
 public class StreamPracticeTest {
     @Rule
