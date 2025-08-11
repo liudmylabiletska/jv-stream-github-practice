@@ -1,13 +1,12 @@
 package practice;
 
+import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 import model.Candidate;
 import model.Cat;
 import model.Person;
-import java.util.List;
-import java.util.NoSuchElementException;
-import java.util.function.Predicate;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 public class StreamPractice {
     /**
@@ -101,6 +100,7 @@ public class StreamPractice {
      * parametrized with Candidate in CandidateValidator.
      */
     public List<String> validateCandidates(List<Candidate> candidates) {
+        CandidateValidator validator = new CandidateValidator();
         return candidates.stream()
                 .filter(new CandidateValidator())
                 .map(Candidate::getName)
